@@ -115,10 +115,15 @@ class EventDrivenProvider extends ServiceProvider
 		$this->publishes([
 			__DIR__ . '/../Configs/streamable/resources.php' => config_path('streamable/resources.php'),
 		], );
+        $this->publishes([
+            __DIR__ . '/../Configs/streamable/platforms.php' => config_path('streamable/platforms.php'),
+        ], );
 		$this->publishes([
 			__DIR__ . '/../Configs/streamable/ignore_objects.php' => config_path('streamable/ignore_objects.php'),
 		], );
-		$this->mergeConfigFrom(__DIR__ . '/../Configs/streamable.php', 'streamable');
+        $this->publishes([
+            __DIR__ . '/../Configs/streamable.php' => config_path('streamable.php'),
+        ], );
 	}
 	
 	private function publishMigrations(): void

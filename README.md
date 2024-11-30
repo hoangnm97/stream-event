@@ -6,7 +6,7 @@
     "repositories": [
       {
         "type": "vcs",
-        "url": "https://git.hthdev.com/public-group/stream-event-driven"
+        "url": "https://github.com/hoangnm97/stream-event"
       },
    ...
     
@@ -21,7 +21,7 @@
    ```
 3. run command
     ```sh
-    composer require hoangdev/stream-event-driven:1.0.1
+    composer require hoangdev/stream-event-driven:dev-main
    ```
    To the package (note: remember to push newest package)
 4. Run
