@@ -1,14 +1,14 @@
 <?php
 
-namespace Softel\StreamEventDriven\Jobs;
+namespace Hoangdev\StreamEventDriven\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\{InteractsWithQueue, SerializesModels};
 use Illuminate\Support\Facades\Log;
 use Mockery\Exception;
-use Softel\StreamEventDriven\Contracts\{StreamableResourceInterface};
-use Softel\StreamEventDriven\Contracts\ProducerHandlerInterface;
+use Hoangdev\StreamEventDriven\Contracts\{StreamableResourceInterface};
+use Hoangdev\StreamEventDriven\Contracts\ProducerHandlerInterface;
 use Throwable;
 
 class StreamJob implements ShouldQueue

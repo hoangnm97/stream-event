@@ -1,17 +1,17 @@
 <?php
 
-namespace Softel\StreamEventDriven\Handlers\Kafka;
+namespace Hoangdev\StreamEventDriven\Handlers\Kafka;
 
 use Enqueue\RdKafka\RdKafkaConnectionFactory;
 use Exception;
 use Interop\Queue\{Consumer, Context, Message, Topic};
-use Softel\StreamEventDriven\Contracts\ConsumerHandlerInterface;
-use Softel\StreamEventDriven\Exception\StreamException;
-use Softel\StreamEventDriven\Exception\StreamUnhandledException;
-use Softel\StreamEventDriven\Handlers\Kafka\Traits\FailureHandler;
-use Softel\StreamEventDriven\Logger\Logger;
-use Softel\StreamEventDriven\Models\FailedStream;
-use Softel\StreamEventDriven\Resolver\StreamableResolver;
+use Hoangdev\StreamEventDriven\Contracts\ConsumerHandlerInterface;
+use Hoangdev\StreamEventDriven\Exception\StreamException;
+use Hoangdev\StreamEventDriven\Exception\StreamUnhandledException;
+use Hoangdev\StreamEventDriven\Handlers\Kafka\Traits\FailureHandler;
+use Hoangdev\StreamEventDriven\Logger\Logger;
+use Hoangdev\StreamEventDriven\Models\FailedStream;
+use Hoangdev\StreamEventDriven\Resolver\StreamableResolver;
 use Throwable;
 
 class ConsumerHandler implements ConsumerHandlerInterface

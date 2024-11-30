@@ -2,7 +2,7 @@
     "name": "hoangdev/stream-event-driven",
     "autoload": {
         "psr-4": {
-            "Softel\\StreamEventDriven\\": "src/"
+            "Hoangdev\\StreamEventDriven\\": "src/"
         }
     },
     "authors": [

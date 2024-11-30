@@ -1,6 +1,6 @@
 <?php
 
-namespace Softel\StreamEventDriven\Exception;
+namespace Hoangdev\StreamEventDriven\Exception;
 
 use Exception;
 use Illuminate\Http\JsonResponse;

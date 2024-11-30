@@ -1,9 +1,9 @@
 <?php
 
-namespace Softel\StreamEventDriven\Events;
+namespace Hoangdev\StreamEventDriven\Events;
 
 use Illuminate\Queue\SerializesModels;
-use Softel\StreamEventDriven\Contracts\StreamableResourceInterface as StreamableResourceContract;
+use Hoangdev\StreamEventDriven\Contracts\StreamableResourceInterface as StreamableResourceContract;
 
 class StreamCreated
 {

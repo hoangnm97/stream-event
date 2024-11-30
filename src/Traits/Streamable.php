@@ -1,13 +1,13 @@
 <?php
 
-namespace Softel\StreamEventDriven\Traits;
+namespace Hoangdev\StreamEventDriven\Traits;
 
 use Exception;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
-use Softel\StreamEventDriven\Contracts\StreamableResourceInterface;
-use Softel\StreamEventDriven\Events\StreamCreated;
-use Softel\StreamEventDriven\Exception\StreamException;
+use Hoangdev\StreamEventDriven\Contracts\StreamableResourceInterface;
+use Hoangdev\StreamEventDriven\Events\StreamCreated;
+use Hoangdev\StreamEventDriven\Exception\StreamException;
 use Throwable;
 
 trait Streamable

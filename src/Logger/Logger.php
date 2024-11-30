@@ -1,6 +1,6 @@
 <?php
 
-namespace Softel\StreamEventDriven\Logger;
+namespace Hoangdev\StreamEventDriven\Logger;
 
 use Illuminate\Contracts\Support\{Arrayable, Jsonable};
 use Illuminate\Support\Stringable;

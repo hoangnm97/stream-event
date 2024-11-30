@@ -1,6 +1,6 @@
 <?php
 
-namespace Softel\StreamEventDriven\Providers;
+namespace Hoangdev\StreamEventDriven\Providers;
 
 use Enqueue\RdKafka\RdKafkaConnectionFactory;
 use Enqueue\RdKafka\RdKafkaMessage;
@@ -9,15 +9,15 @@ use Illuminate\Support\ServiceProvider;
 use JetBrains\PhpStorm\NoReturn;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
-use Softel\StreamEventDriven\Console\ConsumeCommand;
-use Softel\StreamEventDriven\Console\ListFailedCommand;
-use Softel\StreamEventDriven\Console\RetryCommand;
-use Softel\StreamEventDriven\Console\RetryUnhandledCommand;
-use Softel\StreamEventDriven\Contracts\ConsumerHandlerInterface;
-use Softel\StreamEventDriven\Contracts\ProducerHandlerInterface;
-use Softel\StreamEventDriven\Handlers\Kafka\ConsumerHandler;
-use Softel\StreamEventDriven\Handlers\Kafka\ProducerHandler;
-use Softel\StreamEventDriven\Listeners\StreamListener;
+use Hoangdev\StreamEventDriven\Console\ConsumeCommand;
+use Hoangdev\StreamEventDriven\Console\ListFailedCommand;
+use Hoangdev\StreamEventDriven\Console\RetryCommand;
+use Hoangdev\StreamEventDriven\Console\RetryUnhandledCommand;
+use Hoangdev\StreamEventDriven\Contracts\ConsumerHandlerInterface;
+use Hoangdev\StreamEventDriven\Contracts\ProducerHandlerInterface;
+use Hoangdev\StreamEventDriven\Handlers\Kafka\ConsumerHandler;
+use Hoangdev\StreamEventDriven\Handlers\Kafka\ProducerHandler;
+use Hoangdev\StreamEventDriven\Listeners\StreamListener;
 use Illuminate\Contracts\Foundation\Application;
 use Interop\Queue\Message;
 

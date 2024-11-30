@@ -1,6 +1,6 @@
 <?php
 
-namespace Softel\StreamEventDriven\Models;
+namespace Hoangdev\StreamEventDriven\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;

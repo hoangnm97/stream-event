@@ -1,13 +1,13 @@
 <?php
 
-namespace Softel\StreamEventDriven\Console;
+namespace Hoangdev\StreamEventDriven\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Interop\Queue\Message;
-use Softel\StreamEventDriven\Contracts\ConsumerHandlerInterface;
-use Softel\StreamEventDriven\Contracts\ProducerHandlerInterface;
-use Softel\StreamEventDriven\Models\FailedStream;
+use Hoangdev\StreamEventDriven\Contracts\ConsumerHandlerInterface;
+use Hoangdev\StreamEventDriven\Contracts\ProducerHandlerInterface;
+use Hoangdev\StreamEventDriven\Models\FailedStream;
 use Throwable;
 
 class RetryCommand extends Command

@@ -1,9 +1,9 @@
 <?php
 
-namespace Softel\StreamEventDriven\Traits;
+namespace Hoangdev\StreamEventDriven\Traits;
 
-use Softel\StreamEventDriven\Contracts\StreamableResourceInterface;
-use Softel\StreamEventDriven\Events\StreamCreated;
+use Hoangdev\StreamEventDriven\Contracts\StreamableResourceInterface;
+use Hoangdev\StreamEventDriven\Events\StreamCreated;
 use Throwable;
 
 /**

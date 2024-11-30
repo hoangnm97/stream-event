@@ -1,9 +1,9 @@
 <?php
 
-namespace Softel\StreamEventDriven\Console;
+namespace Hoangdev\StreamEventDriven\Console;
 
 use Illuminate\Console\Command;
-use Softel\StreamEventDriven\Contracts\ConsumerHandlerInterface;
+use Hoangdev\StreamEventDriven\Contracts\ConsumerHandlerInterface;
 use Throwable;
 
 class ConsumeCommand extends Command

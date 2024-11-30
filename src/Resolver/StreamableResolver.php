@@ -1,12 +1,12 @@
 <?php
 
-namespace Softel\StreamEventDriven\Resolver;
+namespace Hoangdev\StreamEventDriven\Resolver;
 
 use Exception;
 use Illuminate\Support\Arr;
-use Softel\StreamEventDriven\Contracts\StreamableReceivedInterface;
-use Softel\StreamEventDriven\Exception\StreamUnhandledException;
-use Softel\StreamEventDriven\Handlers\Kafka\Traits\FailureHandler;
+use Hoangdev\StreamEventDriven\Contracts\StreamableReceivedInterface;
+use Hoangdev\StreamEventDriven\Exception\StreamUnhandledException;
+use Hoangdev\StreamEventDriven\Handlers\Kafka\Traits\FailureHandler;
 use Throwable;
 
 class StreamableResolver

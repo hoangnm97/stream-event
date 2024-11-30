@@ -1,18 +1,18 @@
 <?php
 
-namespace Softel\StreamEventDriven\Handlers\Kafka;
+namespace Hoangdev\StreamEventDriven\Handlers\Kafka;
 
 use Carbon\Carbon;
 use Enqueue\RdKafka\RdKafkaConnectionFactory;
 use Exception;
 use Interop\Queue\{Context, Message, Topic};
 use Ramsey\Uuid\Uuid;
-use Softel\StreamEventDriven\Exception\StreamException;
-use Softel\StreamEventDriven\Models\FailedStream;
-use Softel\StreamEventDriven\Contracts\{StreamablePushInterface};
-use Softel\StreamEventDriven\Contracts\ProducerHandlerInterface;
-use Softel\StreamEventDriven\Handlers\Kafka\Traits\FailureHandler;
-use Softel\StreamEventDriven\Logger\Logger;
+use Hoangdev\StreamEventDriven\Exception\StreamException;
+use Hoangdev\StreamEventDriven\Models\FailedStream;
+use Hoangdev\StreamEventDriven\Contracts\{StreamablePushInterface};
+use Hoangdev\StreamEventDriven\Contracts\ProducerHandlerInterface;
+use Hoangdev\StreamEventDriven\Handlers\Kafka\Traits\FailureHandler;
+use Hoangdev\StreamEventDriven\Logger\Logger;
 use Throwable;
 
 class ProducerHandler implements ProducerHandlerInterface

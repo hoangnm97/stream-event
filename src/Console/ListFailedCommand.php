@@ -1,11 +1,11 @@
 <?php
 
-namespace Softel\StreamEventDriven\Console;
+namespace Hoangdev\StreamEventDriven\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\Arr;
-use Softel\StreamEventDriven\Models\FailedStream;
+use Hoangdev\StreamEventDriven\Models\FailedStream;
 
 class ListFailedCommand extends Command
 {

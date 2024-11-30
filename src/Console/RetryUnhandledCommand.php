@@ -1,13 +1,13 @@
 <?php
 
-namespace Softel\StreamEventDriven\Console;
+namespace Hoangdev\StreamEventDriven\Console;
 
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Interop\Queue\Message;
-use Softel\StreamEventDriven\Contracts\ConsumerHandlerInterface;
-use Softel\StreamEventDriven\Models\UnhandledMessage;
+use Hoangdev\StreamEventDriven\Contracts\ConsumerHandlerInterface;
+use Hoangdev\StreamEventDriven\Models\UnhandledMessage;
 
 class RetryUnhandledCommand extends Command
 {

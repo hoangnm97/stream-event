@@ -1,10 +1,10 @@
 <?php
 
-namespace Softel\StreamEventDriven\Contracts;
+namespace Hoangdev\StreamEventDriven\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 use Interop\Queue\{Message, Topic};
-use Softel\StreamEventDriven\Contracts\StreamableResourceInterface as StreamableResourceContract;
+use Hoangdev\StreamEventDriven\Contracts\StreamableResourceInterface as StreamableResourceContract;
 use Throwable;
 
 interface ProducerHandlerInterface

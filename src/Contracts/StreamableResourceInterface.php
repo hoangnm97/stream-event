@@ -1,6 +1,6 @@
 <?php
 
-namespace Softel\StreamEventDriven\Contracts;
+namespace Hoangdev\StreamEventDriven\Contracts;
 
 use Throwable;
 

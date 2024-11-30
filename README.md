@@ -15,18 +15,18 @@
 2. Import this provider to config/app.php 
     ```sh
    'providers' => ServiceProvider::defaultProviders()->merge([
-      \Softel\StreamEventDriven\Providers\EventDrivenProvider::class
+      \Hoangdev\StreamEventDriven\Providers\EventDrivenProvider::class
       ...
    ])->toArray(),
    ```
 3. run command
     ```sh
-    composer require softel/stream-event-driven:1.0.1
+    composer require hoangdev/stream-event-driven:1.0.1
    ```
    To the package (note: remember to push newest package)
 4. Run
    ```sh
-   php artisan vendor:publish --provider="Softel\StreamEventDriven\Providers\EventDrivenProvider"
+   php artisan vendor:publish --provider="Hoangdev\StreamEventDriven\Providers\EventDrivenProvider"
    ```
 5. Add this env variable: example:
    ```sh
@@ -46,10 +46,10 @@
     + To get message from topic:<br />
       <code>kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test</code>
 # Usage
-- Implement ``Softel\StreamEventDriven\Contracts\StreamableReceivedInterface`` into the class you need to handle received with kafka and use ``Softel\StreamEventDriven\Traits\ReceivedStreamable`` as a trait.
+- Implement ``Hoangdev\StreamEventDriven\Contracts\StreamableReceivedInterface`` into the class you need to handle received with kafka and use ``Hoangdev\StreamEventDriven\Traits\ReceivedStreamable`` as a trait.
 - Then you can use/overwrite the needed method in you class. After all, you can call method ``receiveStream()`` to handle your messages
 - You need to have a column with value is timestamp in database in the updated/create object for the compare like the flow below
-- Implement ``Softel\StreamEventDriven\Contracts\StreamablePushInterface`` into the class you need to handle received with kafka and use ``Softel\StreamEventDriven\Traits\PushStreamable`` as a trait.
+- Implement ``Hoangdev\StreamEventDriven\Contracts\StreamablePushInterface`` into the class you need to handle received with kafka and use ``Hoangdev\StreamEventDriven\Traits\PushStreamable`` as a trait.
 - Then you can use/overwrite the needed method in you class. After all, you can call method ``pushStream()`` to handle your messages
 - Example:
 ![img.png](images/img.png)

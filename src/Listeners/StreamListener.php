@@ -1,10 +1,10 @@
 <?php
 
-namespace Softel\StreamEventDriven\Listeners;
+namespace Hoangdev\StreamEventDriven\Listeners;
 
 use Illuminate\Events\Dispatcher;
-use Softel\StreamEventDriven\Events\StreamCreated;
-use Softel\StreamEventDriven\Jobs\StreamJob;
+use Hoangdev\StreamEventDriven\Events\StreamCreated;
+use Hoangdev\StreamEventDriven\Jobs\StreamJob;
 
 class StreamListener
 {
@@ -27,7 +27,7 @@ class StreamListener
 	{
 		$events->listen(
 			StreamCreated::class,
-			'Softel\StreamEventDriven\Listeners\StreamListener@onCreated'
+			'Hoangdev\StreamEventDriven\Listeners\StreamListener@onCreated'
 		);
 		
 	}

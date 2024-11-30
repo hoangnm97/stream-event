@@ -1,12 +1,12 @@
 <?php
 
-namespace Softel\StreamEventDriven\Handlers\Kafka\Traits;
+namespace Hoangdev\StreamEventDriven\Handlers\Kafka\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Interop\Queue\Message;
 use Interop\Queue\Topic;
-use Softel\StreamEventDriven\Models\FailedStream;
-use Softel\StreamEventDriven\Models\UnhandledMessage;
+use Hoangdev\StreamEventDriven\Models\FailedStream;
+use Hoangdev\StreamEventDriven\Models\UnhandledMessage;
 use Throwable;
 
 trait FailureHandler
