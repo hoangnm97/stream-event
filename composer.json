@@ -1,5 +1,5 @@
 {
-    "name": "softel/stream-event-driven",
+    "name": "hoangdev/stream-event-driven",
     "autoload": {
         "psr-4": {
             "Softel\\StreamEventDriven\\": "src/"
@@ -7,8 +7,8 @@
     },
     "authors": [
         {
-            "name": "Tuan Nguyen",
-            "email": "tuannguyen@softel.vn"
+            "name": "Hoang Nguyen",
+            "email": "hoangnguyen@softel.vn"
         }
     ],
     "require": {
